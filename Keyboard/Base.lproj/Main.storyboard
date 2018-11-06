@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZK-hs-dNf">
+                                <rect key="frame" x="37.5" y="410" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yoV-a0-hiH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameTextFieldTapped:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="lgJ-ob-7TD"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hello" translatesAutoresizingMaskIntoConstraints="NO" id="eZh-ay-voq">
+                                <rect key="frame" x="37.5" y="100" width="300" height="133.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKE-I1-cPz">
+                                <rect key="frame" x="37.5" y="253.5" width="300" height="53.5"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwF-iD-vrK">
+                                <rect key="frame" x="37.5" y="327" width="300" height="53"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UwF-iD-vrK" firstAttribute="width" secondItem="VKE-I1-cPz" secondAttribute="width" id="4wH-Jm-Qo2"/>
+                            <constraint firstItem="eZh-ay-voq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="FIr-l1-imR"/>
+                            <constraint firstItem="eZK-hs-dNf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jsh-rN-jHb"/>
+                            <constraint firstItem="VKE-I1-cPz" firstAttribute="top" secondItem="eZh-ay-voq" secondAttribute="bottom" constant="20" id="Jzg-BJ-Dxs"/>
+                            <constraint firstItem="VKE-I1-cPz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.08" id="Lnf-FO-ybK"/>
+                            <constraint firstItem="eZh-ay-voq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="W9w-fr-PJE"/>
+                            <constraint firstItem="eZh-ay-voq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="azW-2A-nsF"/>
+                            <constraint firstItem="eZh-ay-voq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="bf1-Si-h3Z"/>
+                            <constraint firstItem="eZh-ay-voq" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="c2R-eQ-gsp"/>
+                            <constraint firstItem="UwF-iD-vrK" firstAttribute="top" secondItem="VKE-I1-cPz" secondAttribute="bottom" constant="20" id="gig-M8-JP8"/>
+                            <constraint firstItem="eZK-hs-dNf" firstAttribute="width" secondItem="VKE-I1-cPz" secondAttribute="width" id="h1o-Ch-uEs"/>
+                            <constraint firstItem="UwF-iD-vrK" firstAttribute="height" secondItem="VKE-I1-cPz" secondAttribute="height" id="hiz-AR-EcL"/>
+                            <constraint firstItem="VKE-I1-cPz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iaC-G2-PFf"/>
+                            <constraint firstItem="eZK-hs-dNf" firstAttribute="top" secondItem="UwF-iD-vrK" secondAttribute="bottom" constant="30" id="kV5-uh-nbd"/>
+                            <constraint firstItem="eZh-ay-voq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mx2-0I-hy0"/>
+                            <constraint firstItem="VKE-I1-cPz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="vJp-Jc-Q46"/>
+                            <constraint firstItem="UwF-iD-vrK" firstAttribute="centerX" secondItem="VKE-I1-cPz" secondAttribute="centerX" id="vPp-gg-NBe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FIr-l1-imR"/>
+                                <exclude reference="c2R-eQ-gsp"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="FIr-l1-imR"/>
+                                <exclude reference="azW-2A-nsF"/>
+                                <include reference="c2R-eQ-gsp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="greetingsLabel" destination="UwF-iD-vrK" id="cCh-Um-iIy"/>
+                        <outlet property="nameTextField" destination="eZK-hs-dNf" id="qtl-EC-ffY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hello" width="868" height="274"/>
+    </resources>
+</document>
