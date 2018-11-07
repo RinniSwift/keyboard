@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        greetingsLabel.text = textField.text
+        greetingsLabel.text = "Have a great day, " + textField.text! + "!"
         return true
     }
 }
